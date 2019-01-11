@@ -1,4 +1,8 @@
 
+# Azure DevOps Extension - Add Field and Specify RefName
+
+This extension will allow you to create a new field and speficify the refName in Azure DevOps
+
 # Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
