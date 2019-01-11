@@ -1,0 +1,52 @@
+<html dir="ltr">
+
+<head>
+    <title>Add Field with Reference Name</title>
+    
+    <link href="css/fabric.min.css" rel="stylesheet" />
+    <script src="scripts/VSS.SDK.min.js"></script>
+    
+    <style>
+        body.reference-name-extension {
+            padding: 10px 20px;
+            overflow: auto;
+        }
+        .nameComponent {
+            margin-top: 40px;
+        }
+    </style>
+
+</head>
+
+<body class="reference-name-extension">
+    <script type="text/javascript">
+        
+        VSS.init({
+            usePlatformScripts: true, 
+            usePlatformStyles: true
+        });
+
+        VSS.require(["scripts/main"], function (Main) {
+            Main.init("work-item-search-view");
+        });
+        
+        VSS.require(["VSS/Authentication/Services"], function (VSS_Auth_Service) {
+            VSS.getAccessToken().then(function(token){
+                // Format the auth header
+                var authHeader = VSS_Auth_Service.authTokenManager.getAuthorizationHeader(token);
+
+                // Add token as an Authorization header to your request
+                console.log(JSON.stringify(authHeader));
+            });
+        });
+
+    
+    </script>
+
+    <h2>Add a Field with Reference Name</h2>
+    <div id="work-item-search-view"></div>
+    <div id="react-container"></div>
+    <div id="main"></div>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+{
+  "name": "azure-devops-wit-reference-name-extension",
+  "version": "1.0.0",
+  "description": "Define refName value when creating a new custom field",
+  "main": "index.html",
+  "scripts": {
+    "build": "tsc -p . && gulp",
+    "gBuild": "gulp",
+    "package:dev": "node ./scripts/packageDev",
+    "publish:dev": "npm run clean:vsix && npm run package:dev && node ./scripts/packageDev",
+    "clean:vsix": "rimraf *.vsix"
+  },
+  "keywords": [
+    "extension",
+    "vsts"
+  ],
+  "author": "Microsoft Corportaion",
+  "license": "MIT",
+  "dependencies": {
+    "office-ui-fabric-react": "^4.35.0",
+    "vss-web-extension-sdk": "^5.141.0"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.3.10",
+    "@types/prop-types": "^15.5.6",
+    "@types/q": "0.0.32",
+    "@types/react": "^15.6.1",
+    "@types/react-dom": "^15.5.2",
+    "awesome-typescript-loader": "^5.2.1",
+    "copy-webpack-plugin": "^4.5.2",
+    "cpx": "^1.5.0",
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-template": "^5.0.0",
+    "gulp-typescript": "^5.0.0-alpha.3",
+    "gulp-webpack": "^1.5.0",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "rimraf": "^2.6.2",
+    "source-map-loader": "^0.2.4",
+    "tfx-cli": "^0.6.3",
+    "typescript": "^2.9.2",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
+    "yargs": "^12.0.2"
+  }
+}
