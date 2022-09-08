@@ -38,7 +38,7 @@
     "react-dom": "^16.5.2",
     "rimraf": "^2.6.2",
     "source-map-loader": "^0.2.4",
-    "tfx-cli": "^0.6.3",
+    "tfx-cli": "^0.12.0",
     "typescript": "^2.9.2",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2",
