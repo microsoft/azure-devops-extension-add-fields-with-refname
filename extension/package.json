@@ -29,7 +29,7 @@
     "awesome-typescript-loader": "^5.2.1",
     "copy-webpack-plugin": "^4.5.2",
     "cpx": "^1.5.0",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-rename": "^1.4.0",
     "gulp-template": "^5.0.0",
     "gulp-typescript": "^5.0.0-alpha.3",
